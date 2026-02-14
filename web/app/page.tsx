@@ -1,4 +1,13 @@
-export default function Home() {
+import { getHomepage } from '@/lib/sanity/queries';
+
+export default async function Home() {
+  const data = await getHomepage();
+  
+  // Fallback values if Sanity data is not available
+  const slogan = data?.slogan || "An Ecommerce Design Collective for Visionary Brands";
+  const email = data?.email || "hello@unclebrotherson.com";
+  const emailCta = data?.emailCta || "Get in Touch";
+
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col items-center justify-center text-left" role="main">
@@ -25,8 +34,8 @@ export default function Home() {
             <path d="M0 43.2403C0 42.2077 0.129229 41.1751 0.4523 40.0135C0.775371 38.8518 1.3569 37.4319 2.13227 35.6249L8.98139 19.3613L7.2368 17.2961H3.55379L4.32916 14.8437L17.8335 14.1983L9.82137 33.5597C8.91677 35.6249 8.33525 37.1093 8.07679 38.0128C7.75372 38.9163 7.62449 39.5617 7.62449 40.0135C7.62449 40.4007 7.6891 40.7234 7.94756 40.9815C8.1414 41.2397 8.46447 41.3042 8.85216 41.3042C10.1444 41.3042 11.7598 40.4652 13.569 38.7227C15.3782 36.9802 17.5105 34.4632 19.9012 31.1718C21.1935 29.3647 22.4212 27.0413 23.5842 24.2017C24.7473 21.362 25.8457 18.1997 26.7503 14.8437L34.181 14.1983L27.2672 33.5597C26.4919 35.6894 25.9749 37.3029 25.6519 38.4645C25.2642 39.6262 25.0703 40.5943 25.0703 41.3687C26.3626 40.5943 27.4611 39.8844 28.4303 39.1099C29.3349 38.4 30.4333 37.4319 31.661 36.2703L33.0179 37.561C30.6918 40.2071 28.1718 42.4659 25.458 44.402C22.7442 46.3382 20.5473 47.3062 18.9966 47.3062C18.2212 47.3062 17.6397 47.1126 17.3812 46.7254C17.1228 46.3382 16.9936 45.8219 16.9936 45.1119C16.9936 44.2084 17.3166 42.8531 17.9628 41.1106C18.6089 39.4326 19.6427 37.0447 20.9996 33.9469H20.8704C17.9628 38.1419 15.249 41.4333 12.729 43.7566C10.1444 46.1445 7.43064 47.3062 4.45839 47.3062C1.48613 47.3062 0 45.9509 0 43.2403Z"/>
           </svg>
           <div className="flex flex-col gap-4 justify-start items-start">
-            <p className="m-0">An Ecommerce Design Collective for Visionary Brands</p>
-            <a href="mailto:hello@unclebrotherson.com" className="text-12 font-medium uppercase relative inline-block focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light after:absolute after:bottom-0 after:right-0 after:h-px after:w-0 after:bg-dark after:transition-[width,right,left] after:duration-300 after:ease-in-out hover:after:left-0 hover:after:right-auto hover:after:w-full" aria-label="Send us an email at hello@unclebrotherson.com">Get in Touch</a>
+            <p className="m-0">{slogan}</p>
+            <a href={`mailto:${email}`} className="text-12 font-medium uppercase relative inline-block focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light after:absolute after:bottom-0 after:right-0 after:h-px after:w-0 after:bg-dark after:transition-[width,right,left] after:duration-300 after:ease-in-out hover:after:left-0 hover:after:right-auto hover:after:w-full" aria-label={`Send us an email at ${email}`}>{emailCta}</a>
           </div>
         </div>
       </main>

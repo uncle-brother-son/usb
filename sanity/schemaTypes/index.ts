@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import homepage from './homepage'
+
+export const schemaTypes = [homepage]
