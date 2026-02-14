@@ -1,21 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Optimize for Cloudflare Pages
-  output: 'standalone',
+  // Export as static site for Cloudflare Pages
+  output: 'export',
   
-  // Image optimization configuration
+  // Image optimization configuration for static export
   images: {
-    formats: ['image/avif', 'image/webp'],
-    // For Cloudflare, you may want to use a custom loader
-    // loader: 'custom',
-    // loaderFile: './lib/image-loader.ts',
+    unoptimized: true,
   },
-  
-  // Enable experimental features if needed
-  // experimental: {
-  //   serverActions: true,
-  // },
 };
 
 export default nextConfig;
