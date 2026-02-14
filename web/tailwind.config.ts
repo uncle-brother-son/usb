@@ -8,19 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // Custom colors
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        // Add your custom colors here
-        // primary: "#your-color",
-        // secondary: "#your-color",
+        white: "#FFFFFF",
+        light: "#ECECEC",
+        dark: "#2B2B2B",
+        pop: "#DEEC1C",
       },
       
       // Custom fonts
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Arial", "Helvetica", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        aeonik: ['Aeonik', 'Arial', 'Helvetica', 'sans-serif'],
+        sans: ['Aeonik', 'Arial', 'Helvetica', 'sans-serif'],
+        mono: ['ui-monospace', 'monospace'],
       },
       
       // Custom animations
@@ -28,17 +27,13 @@ const config: Config = {
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       
-      // Custom spacing, breakpoints, etc. can be added here
-      // spacing: {},
-      // screens: {},
-      // borderRadius: {},
+      // Custom font sizes
+      fontSize: {
+        '14': '14px',
+      },
     },
   },
-  plugins: [
-    // Add Tailwind plugins here
-    // require('@tailwindcss/forms'),
-    // require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 };
 
 export default config;

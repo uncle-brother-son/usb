@@ -1,21 +1,18 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikCondensedPro-Regular.woff2') format('woff2'),
+       url('/fonts/AeonikCondensedPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-geist-sans: "Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-geist-mono: "Geist Mono", "Courier New", monospace;
+  --color-white: #FFFFFF;
+  --color-light: #ECECEC;
+  --color-dark: #2B2B2B;
+  --color-pop: #DEEC1C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans);
-}
