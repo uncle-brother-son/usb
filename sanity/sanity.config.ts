@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'USB Site',
 
-  projectId: 'your-project-id', // You'll need to add your project ID here
+  projectId: '9tqz91vf',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
