@@ -1,11 +1,11 @@
-# USB Site
+# UBS Site
 
 This project consists of two main components:
 
 ## Project Structure
 
 ```
-USB/
+UBS/
 ├── sanity/          # Sanity CMS Studio
 └── web/             # Next.js Website
 ```

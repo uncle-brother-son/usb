@@ -1,7 +1,7 @@
 {
   "name": "sanity",
   "version": "1.0.0",
-  "description": "USB Site - Sanity CMS",
+  "description": "UBS Site - Sanity CMS",
   "main": "index.js",
   "scripts": {
     "dev": "sanity dev",

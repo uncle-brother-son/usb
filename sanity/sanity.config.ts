@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'USB Site',
+  title: 'UBS Site',
 
   projectId: '9tqz91vf',
   dataset: 'production',
