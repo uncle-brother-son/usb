@@ -17,7 +17,7 @@ export default function Home() {
           <div className="pt-8">
             <div className="inline-flex items-center space-x-2 text-gray-400">
               <div className="animate-pulse h-2 w-2 bg-green-500 rounded-full"></div>
-              <span className="text-sm">Under Constructions</span>
+              <span className="text-sm">Under Construction</span>
             </div>
           </div>
         </div>
