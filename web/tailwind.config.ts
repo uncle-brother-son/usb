@@ -8,11 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        white: "#FFFFFF",
-        light: "#ECECEC",
-        dark: "#2B2B2B",
-        pop: "#DEEC1C",
+      colors: {},
+
+      // Custom breakpoints
+      screens: {
+        'xs': '475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       },
       
       // Custom fonts
@@ -25,11 +30,6 @@ const config: Config = {
       // Custom animations
       animation: {
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-      },
-      
-      // Custom font sizes
-      fontSize: {
-        '14': '14px',
       },
     },
   },

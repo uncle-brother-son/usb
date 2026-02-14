@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/AeonikCondensedPro-Regular.woff2') format('woff2'),
-       url('/fonts/AeonikCondensedPro-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+@font-face { font-family: 'Aeonik'; src: url('/fonts/AeonikCondensedPro-Regular.woff2') format('woff2'), url('/fonts/AeonikCondensedPro-Regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Aeonik'; src: url('/fonts/AeonikCondensedPro-Medium.woff2') format('woff2'), url('/fonts/AeonikCondensedPro-Medium.woff') format('woff'); font-weight: 500; font-style: normal; font-display: swap; }
 
-:root {
+@theme {
+  --font-aeonik: 'Aeonik', Arial, Helvetica, sans-serif;
   --color-white: #FFFFFF;
   --color-light: #ECECEC;
   --color-dark: #2B2B2B;
-  --color-pop: #DEEC1C;
+  --color-pop: #DEEC1C;  
+  --text-10: 10px;
+  --text-12: 12px;
+  --text-14: 14px;
 }
 
