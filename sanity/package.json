@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@sanity/vision": "^5.9.0",
-    "sanity": "^5.9.0"
+    "sanity": "^5.9.0",
+    "styled-components": "^6.3.9"
   }
 }
