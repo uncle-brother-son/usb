@@ -1,0 +1,18 @@
+{
+  "name": "sanity",
+  "version": "1.0.0",
+  "description": "USB Site - Sanity CMS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/vision": "^5.9.0",
+    "sanity": "^5.9.0"
+  }
+}
