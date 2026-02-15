@@ -28,7 +28,7 @@ Add these environment variables in Cloudflare Pages:
 
 ```
 NODE_VERSION=20
-NEXT_PUBLIC_SANITY_PROJECT_ID=your-sanity-project-id
+NEXT_PUBLIC_SANITY_PROJECT_ID=9tqz91vf
 NEXT_PUBLIC_SANITY_DATASET=production
 ```
 
