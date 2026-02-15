@@ -1,2 +1,0 @@
-# Redirect .pages.dev domain to custom domain
-https://ubs-dso.pages.dev/* https://unclebrotherson.com/:splat 301!
