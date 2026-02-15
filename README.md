@@ -6,7 +6,7 @@ This project consists of two main components:
 
 ```
 UBS/
-├── sanity/          # Sanity CMS Studio
+├── studio/          # Sanity CMS Studio
 └── web/             # Next.js Website
 ```
 
@@ -30,21 +30,21 @@ Run both projects in development:
 npm run dev:web
 
 # Terminal 2 - Sanity Studio
-npm run dev:sanity
+npm run dev:studio
 ```
 
 ### Sanity CMS
 
-The Sanity project is located in the `/sanity` folder.
+The Sanity project is located in the `/studio` folder.
 
 **Important:** Before running Sanity, you need to:
 1. Create a Sanity project at https://www.sanity.io/manage
-2. Update the `projectId` in `sanity/sanity.config.ts` with your actual project ID
+2. Update the `projectId` in `studio/sanity.config.ts` with your actual project ID
 
 To run the Sanity Studio:
 
 ```bash
-cd sanity
+cd studio
 npm run dev
 ```
 
@@ -90,7 +90,7 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 ## Next Steps
 
 1. Set up your Sanity project and update the project ID
-2. Create content schemas in `sanity/schemaTypes/`
+2. Create content schemas in `studio/schemaTypes/`
 3. Build out your website pages in `web/app/`
 4. Connect Next.js to Sanity using `@sanity/client`
 5. Deploy to Cloudflare Pages and GitHub

@@ -62,7 +62,7 @@ git push -u origin main
 Sanity Studio can be deployed separately:
 
 ```bash
-cd sanity
+cd studio
 npm run build
 # Deploy to Sanity's hosting or your preferred platform
 ```
