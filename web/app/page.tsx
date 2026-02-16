@@ -56,7 +56,7 @@ export default async function Home() {
 
           <div className="flex flex-col gap-10 justify-start items-start">
             <p className="m-0">{slogan}</p>
-            <a href={`mailto:${email}`} className="group relative inline-block bg-white px-3 py-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light" aria-label={`Send us an email at ${email}`}>
+            <a href={`mailto:${email}`} className="group relative inline-block bg-white px-3 py-1 rounded-sm focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light" aria-label={`Send us an email at ${email}`}>
               <div className='absolute top-0 right-0 h-full rounded-sm w-0 bg-dark transition-[width,right,left] duration-300 ease-in-out group-hover:left-0 group-hover:right-auto group-hover:w-full' />
               <span className='relative mix-blend-difference text-12 text-white font-medium uppercase'>{emailCta}</span>
             </a>
