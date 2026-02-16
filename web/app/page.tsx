@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex flex-col items-center justify-center text-left" role="main">
-        <div className="flex flex-col gap-10 justify-start items-start">
+        <div className="flex flex-col gap-3 justify-start items-start">
           <h1 className="sr-only">Uncle Brother Son - eCommerce Design Collective for Visionary Brands</h1>
           <svg className="hidden md:block fill-dark md:h-14" height="55" viewBox="0 0 462 55" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Uncle Brother Son logo">
             <path d="M340.844 54.8571L335.594 53.3806L342.054 37.916L347.432 40.1956L340.844 54.8571Z"/>
@@ -54,9 +54,12 @@ export default async function Home() {
             <path d="M4.95985 198.546C3.00596 197.868 1.35269 196.889 0 195.534L3.6823 186.724L6.2374 186.649L6.31257 187.929C6.68832 190.715 7.43979 192.748 8.64218 193.953C9.84458 195.233 11.1973 195.835 12.8506 195.835C13.9778 195.835 14.8796 195.459 15.4808 194.706C16.082 193.953 16.4577 192.899 16.4577 191.618C16.4577 190.263 16.1571 188.983 15.6311 187.778C15.0299 186.574 14.2032 185.068 13.0008 183.185C11.6482 181.228 10.5961 179.42 9.91973 177.915C9.24339 176.409 8.94278 174.752 8.94278 172.794C8.94278 170.761 9.39369 168.804 10.4458 166.921C11.4979 165.114 13.0008 163.608 14.9547 162.403C16.9086 161.274 19.2382 160.672 21.9436 160.672C25.4005 160.672 28.4817 161.651 31.3373 163.533L27.2792 173.547H24.4236V172.719C24.4236 170.084 24.0479 167.975 23.3715 166.319C22.6952 164.662 21.6431 163.834 20.1401 163.834C18.9377 163.834 17.9607 164.286 17.3595 165.114C16.7583 166.018 16.4577 167.072 16.4577 168.427C16.4577 169.557 16.6832 170.611 17.2093 171.665C17.6602 172.719 18.4868 174.15 19.614 175.957C20.9667 178.216 22.094 180.249 22.8455 181.981C23.597 183.712 23.9727 185.595 23.9727 187.703C23.9727 189.661 23.4466 191.543 22.4697 193.35C21.4928 195.157 20.0649 196.663 18.111 197.793C16.1571 198.998 13.8275 199.525 11.1221 199.525C8.94277 199.525 6.91374 199.223 4.95985 198.546Z"/>
           </svg>
 
-          <div className="flex flex-col gap-4 justify-start items-start">
+          <div className="flex flex-col gap-10 justify-start items-start">
             <p className="m-0">{slogan}</p>
-            <a href={`mailto:${email}`} className="text-12 font-medium uppercase relative inline-block focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light after:absolute after:bottom-0 after:right-0 after:h-px after:w-0 after:bg-dark after:transition-[width,right,left] after:duration-300 after:ease-in-out hover:after:left-0 hover:after:right-auto hover:after:w-full" aria-label={`Send us an email at ${email}`}>{emailCta}</a>
+            <a href={`mailto:${email}`} className="group relative inline-block bg-white px-3 py-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2 focus:ring-offset-light" aria-label={`Send us an email at ${email}`}>
+              <div className='absolute top-0 right-0 h-full rounded-sm w-0 bg-dark transition-[width,right,left] duration-300 ease-in-out group-hover:left-0 group-hover:right-auto group-hover:w-full' />
+              <span className='relative mix-blend-difference text-12 text-white font-medium uppercase'>{emailCta}</span>
+            </a>
           </div>
         </div>
       </main>

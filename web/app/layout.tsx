@@ -86,6 +86,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/fonts/Aeonik-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Aeonik-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
       <body className="font-aeonik text-dark text-14 bg-light subpixel-antialiased">
         {children}
       </body>
